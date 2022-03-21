@@ -1,13 +1,21 @@
 #include "main.h"
 
 /**
- * _puts - Prints a string .
- * @str: string.
+ * print_rev - print reverse characters.
+ * @s: validate the character
+ * Return: Always 0.
  */
-void _puts(char *str)
+void print_rev(char *s)
 {
-	while (*str)
-		_putchar(*str++);
+	int i = 0;
 
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	i--;
+	for (; i >= 0; i--)
+	{
+		_putchar(s[i]);
+	}
 	_putchar('\n');
-}
