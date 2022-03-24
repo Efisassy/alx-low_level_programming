@@ -1,45 +1,33 @@
 #include "main.h"
 
 /**
- * _strncat -  function that concatenates two strings.
- * @n: size of character to contatenate
- * @dest: s1
- * @src: s2
- * Return: Always 0.
+ * _strncat - two words
+ * @dest : pointer to char param
+ * @src : pointer to char param
+ * @n : int parameter
+ * Return: *dest
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
+	int m;
+	int i;
 
-	int i = 0, c = 0, s = 0;
+	m = 0;
 
-	while (dest[i] != '\0')
+	for (i = 0; i < 1000; i++)
 	{
-		i++;
-	}
-	while (src[c] != '\0')
-	{
-		c++;
-	}
-
-	while (s <= c)
-	{
-		if (n > 0)
-		{
-		dest[i] = src[s];
-		s++;
-		i++;
-		n--;
-		}
-		else
+		if (dest[i] == '\0')
 		{
 			break;
 		}
+		m++;
 	}
+
+	for (i = 0; src[i] != '\0' && i < n; i++)
+	{
+		dest[m + i] = src[i];
+	}
+	dest[m + i] = '\0';
 	return (dest);
 }
-
-    © 2022 GitHub, Inc.
-
-    Terms
-    Privacy
-
