@@ -1,5 +1,6 @@
+
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
   * flip_bits - ...
